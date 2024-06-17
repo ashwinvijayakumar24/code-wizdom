@@ -23,7 +23,7 @@ const Contact = () => {
     const handleSubmit = async (e) => {
       e.preventDefault();
       setSubmitted(true);
-      await axios.post('http://localhost:5000/contact', formData)
+      await axios.post('https://code-wizdom.onrender.com/contact', formData)
       .then(response => console.log(response))
       .catch(err => console.log(err));
       await axios.post('https://api.emailjs.com/api/v1.0/email/send', emailData, {

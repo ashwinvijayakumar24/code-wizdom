@@ -26,7 +26,7 @@ const SignUpForm = () => {
     };
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await axios.post('http://localhost:5000/signup', formData)
+        await axios.post('https://code-wizdom.onrender.com/signup', formData)
         .then(response => console.log(response))
         .catch(err => console.log(err));
         navigate('/signup-completed')
