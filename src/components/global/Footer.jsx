@@ -40,7 +40,7 @@ const Footer = () =>  {
           </nav>
       </div>
       <div className="mx-auto mt-4">
-        <p className="">Code Wizdom © 2022</p>
+        <p className="">Code Wizdom © 2024</p>
       </div>
     </div>
   </footer>
