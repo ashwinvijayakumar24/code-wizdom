@@ -1,4 +1,4 @@
-import ashwin from '../../../assets/images/team-members/ashwin.jpg';
+import ashwin from '../../../assets/images/team-members/ashwin.png';
 import arnav from '../../../assets/images/team-members/arnav.png';
 
 
