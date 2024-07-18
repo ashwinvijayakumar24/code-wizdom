@@ -1,5 +1,5 @@
 import ashwin from '../../../assets/images/team-members/ashwin.jpg';
-import arnav from '../../../assets/images/team-members/arnav.jpg';
+import arnav from '../../../assets/images/team-members/arnav.png';
 
 
 const tutors = [
