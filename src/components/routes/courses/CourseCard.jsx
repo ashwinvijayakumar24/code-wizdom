@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const CourseCard = ({course}) => {
     const navigate = useNavigate();
     const handleClick = () => {
-      navigate(course.link);
+      navigate(`/courses${course.link}`);
     };
     return (
         <div className=" mx-auto bg-violet-950 text-white p-8 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-transform cursor-pointer space-y-4" onClick={handleClick}>

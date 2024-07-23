@@ -24,12 +24,9 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/tutors" element={<Tutors/>} />
           <Route exact path="/courses" element={<Courses/>} />
-          <Route exact path={courses[0].link} element={<SingleCourse course={courses[0]}/>} />
-          <Route exact path={courses[1].link} element={<SingleCourse course={courses[1]}/>} />
-          <Route exact path={courses[2].link} element={<SingleCourse course={courses[2]}/>} />
-          <Route exact path={courses[3].link} element={<SingleCourse course={courses[3]}/>} />
-          <Route exact path={courses[4].link} element={<SingleCourse course={courses[4]}/>} />
-          <Route exact path={courses[5].link} element={<SingleCourse course={courses[5]}/>} />
+          {courses.map((course, index) => (
+            <Route key={index} exact path={`/courses${course.link}`} element={<SingleCourse course={course}/>} />
+          ))}
           <Route exact path="/signup" element={<SignUp/>} />
           <Route exact path="/signup-completed" element={<SignUpCompleted/>} />
           <Route path="*" element={<Error />} />

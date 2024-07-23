@@ -5,8 +5,8 @@ import tutors from './TutorData';
 const TutorsGrid = () => {
     return(
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-white p-12">
-                {tutors.map((tutor) => (
-                        <div className="text-center rounded-lg bg-violet-950  mx-auto p-6 space-y-4" key={tutor.id}>
+                {tutors.map((tutor, index) => (
+                        <div className="text-center rounded-lg bg-violet-950  mx-auto p-6 space-y-4" key={index}>
                                 <img
                                     src={tutor.image}
                                     alt="tutor"
