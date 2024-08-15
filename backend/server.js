@@ -26,15 +26,15 @@ mongoose.connect(process.env.DB_URI, {useUnifiedTopology: true, useNewUrlParser:
     .then(console.log("MongoDB connected"))
     .catch(err =>console.log(err));
 
-cron.schedule('*/14 * * * *', async () => {
-    console.log('restarting server');
-    try {
-        const response = await axios.get('https://code-wizdom.onrender.com/signup')
-        console.log('Pinged backend:', response.status);
-        } catch (error) {
-        console.error('Error pinging backend:', error.message);
-        }
-});
+// cron.schedule('*/14 * * * *', async () => {
+//     console.log('restarting server');
+//     try {
+//         const response = await axios.get('https://code-wizdom.onrender.com/signup')
+//         console.log('Pinged backend:', response.status);
+//         } catch (error) {
+//         console.error('Error pinging backend:', error.message);
+//         }
+// });
 
 const port = process.env.PORT || 5000;
 
