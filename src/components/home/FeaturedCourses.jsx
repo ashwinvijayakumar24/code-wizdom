@@ -9,7 +9,7 @@ const FeaturedCourses = () => {
             <div className=" mx-auto grid grid-cols-1 md:max-xl:grid-cols-2 xl:grid-cols-4 gap-8 overflow-y-hidden">
                 {courses.slice(0,4).map((course) => (
                         <div className="text-center p-6 bg-gray-800 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-transform cursor-pointer w-5/6 mx-auto" key={course.id}>
-                            <Link to={course.link}>
+                            <Link to={`courses${course.link}`}>
                                 <img
                                     src={course.image}
                                     alt="course logo"
