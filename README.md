@@ -1,4 +1,4 @@
-#Code Wizdom Legacy Site
+# Code Wizdom Legacy Site
 
 ## https://code-wizdom.netlify.app/
 
